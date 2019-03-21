@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
-language:
+title: 龙的天空
+subtitle: Welcome To My World
+description: 这里的黎明静悄悄
+keywords: loong
+author: Loong
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://huanlingwei.coding.me/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -38,19 +38,55 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-highlight:
+#本主题中还使用到了 hexo-generator-search 的 Hexo 插件来做内容搜索
+search:
+  path: search.xml
+  field: post
+  
+#如果你的文章名称是中文的，那么 Hexo 默认生成的永久链接也会有中文，这样不利于 SEO，
+#且 gitment 评论对中文链接也不支持。我们可以用 hexo-permalink-pinyin Hexo 插件使在
+#生成文章时生成中文拼音的永久链接
+permalink_pinyin:
   enable: true
+  separator: '-' # default: '-'
+  
+#如果你想要在文章中显示文章字数、阅读时长信息，可以安装 hexo-wordcount插件
+wordCount:
+  enable: false # 将这个值设置为 true 即可.
+  postWordCount: true
+  min2read: true
+  totalCount: true
+  
+#本主题中还使用到了 hexo-generator-feed 的 Hexo 插件来做 RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+
+
+highlight:
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace:
   
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'tomorrow'
+  line_number: false    # default false
+  custom_css:
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 12
   order_by: -date
   
 # Category & Tag
@@ -73,7 +109,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hexo-theme-matery
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -82,3 +118,4 @@ deploy:
   repo:
     github: https://github.com/huanlingwei/huanlingwei.github.io.git,master
     coding: https://git.dev.tencent.com/huanlingwei/huanlingwei.git,master
+    gitee: https://gitee.com/huanlingwei/huanlingwei.git,master
