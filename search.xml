@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>python入门1</title>
+      <link href="/2019/03/25/python-ru-men-1/"/>
+      <url>/2019/03/25/python-ru-men-1/</url>
+      
+        <content type="html"><![CDATA[<p>&emsp; 现在是22:48<br>&emsp; 今天开始我尝试花1个月时间熟悉python的基础知识，并完成一些简单的练习<a id="more"></a><br>时间有点晚了，先上一篇之前的文章</p><h1 id="python写一个定时关机软件"><a href="#python写一个定时关机软件" class="headerlink" title="python写一个定时关机软件"></a>python写一个定时关机软件</h1><h2 id="1、码代码，如下"><a href="#1、码代码，如下" class="headerlink" title="1、码代码，如下"></a>1、码代码，如下</h2><p>​<code>`</code> Python</p><pre><code># coding=utf-8&quot;&quot;&quot;编写时间：2019.2.14&quot;&quot;&quot;&quot;&quot;&quot;思路：1、用户输入时间    2、获取当前时间    3、根据两个时间判断还剩多少秒关机    4、使用shutdown -s -t xxx关机    5、使用shutdown -a取消关机&quot;&quot;&quot;import sys,os,time,datetime#os.system(&quot;echo 你好&quot;.encode(&#39;utf-8&#39;).decode(&#39;gbk&#39;))print(&quot;使用说明：按要求输入关机时间&quot;)&#39;&#39;&#39;获取关机时间&#39;&#39;&#39;input_time_hourandoff =input(&#39;请输入小时(如果需要关机，输入 取消关机)：&#39;)if input_time_hourandoff == &quot;取消关机&quot;:    if os.system(&quot;shutdown -a&quot;) ==1116:        print(&quot;因为没有任何进行中的关机过程，所以无法中止系统关机。(1116)&quot;)    else:        print(&quot;取消成功&quot;)else:    input_time_hour = int(input_time_hourandoff)    input_time_minute = int(input(&#39;请输入分钟：&#39;))    &#39;&#39;&#39;检查输入数据格式，暂无&#39;&#39;&#39;    &#39;&#39;&#39;获取当前时分秒&#39;&#39;&#39;    curtime = datetime.datetime.now()    curtime_hour = curtime.hour    curtime_minute = curtime.minute    &#39;&#39;&#39;计算秒数,先换算成时再相减&#39;&#39;&#39;    hours = ((input_time_hour + (input_time_minute / 60)) - (curtime_hour + curtime_minute / 60))    minutes = hours * 60    seconds = hours * 60 * 60    print(&quot;距离关机还有%d分钟&quot;%minutes)    os.system(&#39;shutdown -s -t %d&#39; % seconds)    print(&quot;设置成功，如果想取消关机，打开程序输入：取消关机 即可&quot;)</code></pre><p><code>`</code></p><h2 id="2、将其打包成exe，参考此文"><a href="#2、将其打包成exe，参考此文" class="headerlink" title="2、将其打包成exe，参考此文"></a>2、将其打包成exe，参考此文</h2><p><a href="https://blog.csdn.net/qq_33289175/article/details/87301625" target="_blank" rel="noopener">https://blog.csdn.net/qq_33289175/article/details/87301625</a></p><h2 id="3、通过GUI将其像windows应用一样可视化"><a href="#3、通过GUI将其像windows应用一样可视化" class="headerlink" title="3、通过GUI将其像windows应用一样可视化"></a>3、通过GUI将其像windows应用一样可视化</h2><p><a href="https://blog.csdn.net/qq_33289175/article/details/87303510" target="_blank" rel="noopener">https://blog.csdn.net/qq_33289175/article/details/87303510</a></p><p>现在时间：23:24<br>睡觉！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> newbe </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2019/03/25/wo-de-di-yi-pian-hexo-bo-ke/"/>
+      <url>/2019/03/25/wo-de-di-yi-pian-hexo-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<p>#我的第一篇博客<br>现在是2019/3/24 23:56 周日<br>配置好hexo已经有1周的时间了，但由于这段时间太忙，上了6天的班，终于有时间陪朋友出去玩，晚上9点回来还要被领导消息要求汇报工作/(ㄒoㄒ)/~~<br>10点半交完差终于想起今天要写一篇博客，又花了1小时研究了一下博客编写工具，vscode+七牛云：七牛云自定义域名要备案，折腾了2小时，被阿里云卡住了，成果为0，累！<br>由于时间紧张，暂时先用csdn的markdown编辑器简单写一下下周的任务，算是给我当初定下的“每天写一篇博客”的任务交个差。<br>今后一周我将按优先级完成以下三个目标：<br>1、熟悉markdown语法<br>2、完成每日一篇博客的任务，实在太忙可以从csdn上以前写的复制一篇<br>3、搞定vscode写hexo博客<br>现在是2019/3/25 0:11  周一<br>睡觉！</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
