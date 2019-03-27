@@ -27,6 +27,27 @@
     
     
     <entry>
+      <title>python入门2 --python2的代码转换成python3</title>
+      <link href="/2019/03/27/python-ru-men-2-python2-de-dai-ma-zhuan-huan-cheng-python3/"/>
+      <url>/2019/03/27/python-ru-men-2-python2-de-dai-ma-zhuan-huan-cheng-python3/</url>
+      
+        <content type="html"><![CDATA[<p>&emsp; 现在是22:31<br>&emsp; 当你再网上寻找代码教程时，却发现对方的代码是python2的，此时若是直接拷贝过来用，就需要改代码里面的语法，例如</p><p>1、print 改成print()，如果代码量大，改起来很浪费时间。</p><p>2、更甚至有些python2的模块在python3里已经过时了，这个时候要重新导包，会很痛苦。</p><pre><code>   此时可以使用py2to3插件，可以完美解决该问题。&lt;!--more--&gt;</code></pre><h1 id="python2的代码转换成python3"><a href="#python2的代码转换成python3" class="headerlink" title="python2的代码转换成python3"></a>python2的代码转换成python3</h1><p> 以pycharm为例</p><p>1、在Python安装路径下的Tools\scripts目录下找到2to3.py文件</p><p><img src="https://img-blog.csdnimg.cn/20190304232351800.png" alt></p><p>2、进入file–&gt;setting–&gt;external tools–&gt;点击“+”<br><img src="https://img-blog.csdnimg.cn/20190304232628568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMjg5MTc1,size_16,color_FFFFFF,t_70" alt></p><p>3、I、name：2to3</p><pre><code>II、description：py2转py3III、Program:选择pyhon.exe的路径IV、arguments:刚才获得的2to3文件路径，后面加上“ -w \$FilePath\$”      例如：G:\softneededfaster\pythonstudyfiles\python\Tools\scripts\2to3.py -w \$FilePath\$V、working directory：\$FileDir\$</code></pre><p><img src="https://img-blog.csdnimg.cn/20190304232832896.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMjg5MTc1,size_16,color_FFFFFF,t_70" alt></p><p>4、添加完点击ok，保存成功。在tool–&gt;external tools–&gt;2to3可以看到该工具</p><p><img src="https://img-blog.csdnimg.cn/20190304233439282.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMjg5MTc1,size_16,color_FFFFFF,t_70" alt></p><p>5、在需要转换python2到python3文件的页面，点击“2to3”，即可自动转换</p><p>如果你用的不是pycharm，可以参考以下文章</p><p><a href="https://blog.csdn.net/u012211419/article/details/51136232" target="_blank" rel="noopener">https://blog.csdn.net/u012211419/article/details/51136232</a></p><p>现在时间：23:36<br>这是补上昨天的。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> newbe </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python入门2 --python脚本打包成exe</title>
       <link href="/2019/03/27/python-ru-men-3-python-jiao-ben-da-bao-cheng-exe/"/>
       <url>/2019/03/27/python-ru-men-3-python-jiao-ben-da-bao-cheng-exe/</url>
@@ -42,27 +63,6 @@
             <tag> newbe </tag>
             
             <tag> exe </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>python入门2 --python2的代码转换成python3</title>
-      <link href="/2019/03/27/python-ru-men-2-python2-de-dai-ma-zhuan-huan-cheng-python3/"/>
-      <url>/2019/03/27/python-ru-men-2-python2-de-dai-ma-zhuan-huan-cheng-python3/</url>
-      
-        <content type="html"><![CDATA[<p>&emsp; 现在是22:31<br>&emsp; 当你再网上寻找代码教程时，却发现对方的代码是python2的，此时若是直接拷贝过来用，就需要改代码里面的语法，例如</p><p>1、print 改成print()，如果代码量大，改起来很浪费时间。</p><p>2、更甚至有些python2的模块在python3里已经过时了，这个时候要重新导包，会很痛苦。</p><pre><code>   此时可以使用py2to3插件，可以完美解决该问题。&lt;!--more--&gt;</code></pre><h1 id="python2的代码转换成python3"><a href="#python2的代码转换成python3" class="headerlink" title="python2的代码转换成python3"></a>python2的代码转换成python3</h1><p> 以pycharm为例</p><p>1、在Python安装路径下的Tools\scripts目录下找到2to3.py文件</p><p><img src="https://img-blog.csdnimg.cn/20190304232351800.png" alt></p><p>2、进入file–&gt;setting–&gt;external tools–&gt;点击“+”<br><img src="https://img-blog.csdnimg.cn/20190304232628568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMjg5MTc1,size_16,color_FFFFFF,t_70" alt></p><p>3、I、name：2to3</p><pre><code>II、description：py2转py3III、Program:选择pyhon.exe的路径IV、arguments:刚才获得的2to3文件路径，后面加上“ -w \$FilePath\$”      例如：G:\softneededfaster\pythonstudyfiles\python\Tools\scripts\2to3.py -w \$FilePath\$V、working directory：\$FileDir\$</code></pre><p><img src="https://img-blog.csdnimg.cn/20190304232832896.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMjg5MTc1,size_16,color_FFFFFF,t_70" alt></p><p>4、添加完点击ok，保存成功。在tool–&gt;external tools–&gt;2to3可以看到该工具</p><p><img src="https://img-blog.csdnimg.cn/20190304233439282.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMjg5MTc1,size_16,color_FFFFFF,t_70" alt></p><p>5、在需要转换python2到python3文件的页面，点击“2to3”，即可自动转换</p><p>如果你用的不是pycharm，可以参考以下文章</p><p><a href="https://blog.csdn.net/u012211419/article/details/51136232" target="_blank" rel="noopener">https://blog.csdn.net/u012211419/article/details/51136232</a></p><p>现在时间：23:36<br>这是补上昨天的。</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> python </tag>
-            
-            <tag> newbe </tag>
             
         </tags>
       
