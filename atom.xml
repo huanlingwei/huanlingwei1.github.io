@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://huanlingwei.coding.me/"/>
-  <updated>2019-03-27T14:54:34.501Z</updated>
+  <updated>2019-03-27T15:44:28.460Z</updated>
   <id>https://huanlingwei.coding.me/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用bat脚本一键部署hexo博客</title>
+    <link href="https://huanlingwei.coding.me/2019/03/27/shi-yong-bat-jiao-ben-yi-jian-bu-shu/"/>
+    <id>https://huanlingwei.coding.me/2019/03/27/shi-yong-bat-jiao-ben-yi-jian-bu-shu/</id>
+    <published>2019-03-27T15:36:00.000Z</published>
+    <updated>2019-03-27T15:44:28.460Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;emsp; 现在是23:36&lt;br&gt;&amp;emsp; 这段时间一直用命令行部署，刚刚写完博客去打包的时候觉得太麻烦，于是想到写一个简单的脚本一键部署&amp;lt;!–more–
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://huanlingwei.coding.me/tags/python/"/>
+    
+      <category term="newbe" scheme="https://huanlingwei.coding.me/tags/newbe/"/>
+    
+      <category term="exe" scheme="https://huanlingwei.coding.me/tags/exe/"/>
+    
+  </entry>
   
   <entry>
     <title>python入门2 --python2的代码转换成python3</title>

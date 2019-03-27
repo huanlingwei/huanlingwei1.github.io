@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>使用bat脚本一键部署hexo博客</title>
+      <link href="/2019/03/27/shi-yong-bat-jiao-ben-yi-jian-bu-shu/"/>
+      <url>/2019/03/27/shi-yong-bat-jiao-ben-yi-jian-bu-shu/</url>
+      
+        <content type="html"><![CDATA[<p>&emsp; 现在是23:36<br>&emsp; 这段时间一直用命令行部署，刚刚写完博客去打包的时候觉得太麻烦，于是想到写一个简单的脚本一键部署&lt;!–more– &gt;</p><p>#使用bat脚本一键部署hexo博客<br>一开始我使用如下脚本</p><pre><code>hexo cleanhexo d -g</code></pre><p>发现运行第一行后，脚本自动关闭了</p><p>猜测原因是hexo本身就是批处理脚本，运行到最后时会有自动关闭的命令，导致bat脚本关闭</p><p>故改成如下</p><pre><code>hexo clean&amp;&amp;hexo d -g&amp;&amp;echo Deploy successfully!!! &amp;&amp;ping 127.0.0.1 -n 6 &gt;nul</code></pre><p>其中</p><pre><code>ping 127.0.0.1 -n 6 &gt;nul</code></pre><p>是暂停6秒钟</p><p>现在是23:42，真的该睡了</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> newbe </tag>
+            
+            <tag> exe </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python入门2 --python2的代码转换成python3</title>
       <link href="/2019/03/27/python-ru-men-2-python2-de-dai-ma-zhuan-huan-cheng-python3/"/>
       <url>/2019/03/27/python-ru-men-2-python2-de-dai-ma-zhuan-huan-cheng-python3/</url>
