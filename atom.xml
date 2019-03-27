@@ -45,6 +45,30 @@
   </entry>
   
   <entry>
+    <title>python入门2 --python脚本打包成exe</title>
+    <link href="https://huanlingwei.coding.me/2019/03/27/python-ru-men-3-python-jiao-ben-da-bao-cheng-exe/"/>
+    <id>https://huanlingwei.coding.me/2019/03/27/python-ru-men-3-python-jiao-ben-da-bao-cheng-exe/</id>
+    <published>2019-03-27T14:31:00.000Z</published>
+    <updated>2019-03-27T14:55:56.117Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;emsp; 现在是22:40&lt;br&gt;&amp;emsp; 上篇写了一个定时关机的软件&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq_33289175/article/details/87300783&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/qq_33289175/article/details/87300783&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这次将它达成exe包，这样就可以在没有安装python的环境下使用
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://huanlingwei.coding.me/tags/python/"/>
+    
+      <category term="newbe" scheme="https://huanlingwei.coding.me/tags/newbe/"/>
+    
+      <category term="exe" scheme="https://huanlingwei.coding.me/tags/exe/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python入门2 --python2的代码转换成python3</title>
     <link href="https://huanlingwei.coding.me/2019/03/27/python-ru-men-2-python2-de-dai-ma-zhuan-huan-cheng-python3/"/>
     <id>https://huanlingwei.coding.me/2019/03/27/python-ru-men-2-python2-de-dai-ma-zhuan-huan-cheng-python3/</id>
@@ -68,30 +92,6 @@
       <category term="python" scheme="https://huanlingwei.coding.me/tags/python/"/>
     
       <category term="newbe" scheme="https://huanlingwei.coding.me/tags/newbe/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python入门2 --python脚本打包成exe</title>
-    <link href="https://huanlingwei.coding.me/2019/03/27/python-ru-men-3-python-jiao-ben-da-bao-cheng-exe/"/>
-    <id>https://huanlingwei.coding.me/2019/03/27/python-ru-men-3-python-jiao-ben-da-bao-cheng-exe/</id>
-    <published>2019-03-27T14:31:00.000Z</published>
-    <updated>2019-03-27T14:55:56.117Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&amp;emsp; 现在是22:40&lt;br&gt;&amp;emsp; 上篇写了一个定时关机的软件&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq_33289175/article/details/87300783&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/qq_33289175/article/details/87300783&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这次将它达成exe包，这样就可以在没有安装python的环境下使用
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://huanlingwei.coding.me/tags/python/"/>
-    
-      <category term="newbe" scheme="https://huanlingwei.coding.me/tags/newbe/"/>
-    
-      <category term="exe" scheme="https://huanlingwei.coding.me/tags/exe/"/>
     
   </entry>
   
